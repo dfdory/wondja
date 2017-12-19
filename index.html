@@ -1,0 +1,747 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wondja</title>
+	<!--fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+			<link href="css/bootstrap.css" rel="stylesheet">
+			<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="css/wondja-vente.css" rel="stylesheet" type="text/css" media="all" />
+			<link href="css/wondja-style.css" rel="stylesheet" type="text/css" media="all" />
+			<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="all">
+			<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css" media="all">
+			<link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all">
+			<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+			
+			<link rel="icon" type="image/png" href="images/ico.ico" />
+	<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="wondja,internet" />
+		<script type="application/x-javascript">  
+			addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+			function hideURLbar(){ window.scrollTo(0,1);} 		   
+			    
+	   </script>
+	<!-- //for-mobile-apps -->	
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	<!-- js -->
+	<script src="js/modernizr.custom.97074.js"></script>
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+			 
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					
+				});
+			});
+		</script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() 
+			{
+				 $("#t1").hide();
+				 var divHeight;
+				 var haut;
+				 var obj = document.getElementById('home');
+				 if(obj.offsetHeight)          {divHeight=obj.offsetHeight;}
+			else if(obj.style.pixelHeight){divHeight=obj.style.pixelHeight;}
+			
+				haut=divHeight;
+			if(divHeight < 500){haut = divHeight-100; 
+			}
+			else{haut = divHeight-150;}
+			/*if(divHeight < 500){haut = divHeight-110;}
+			else{haut = divHeight-30;}*/
+					
+				
+				function myFunction() {
+				if (document.body.scrollTop >= haut || document.documentElement.scrollTop >= haut) {
+				document.getElementById("t1").setAttribute('style','visibility:visible');
+				document.getElementById("t2").setAttribute('style','visibility:visible');
+				document.getElementById("t3").setAttribute('style','visibility:visible');
+					
+				} else {
+				    $("#t1").hide();
+				  
+				}
+			}
+		window.onscroll = function() {myFunction()};
+		});
+		</script>
+		
+		
+		<script type="text/javascript">
+	$(document).ready(function() 
+	{
+	
+	$("#t1").hide(); 
+	
+	// activer les liens internes, précédé par un #
+	$('a[href^="#"]').click(function() {
+	// prendre le nom du lien, substr enleve le premier caractere qui est #
+	var ou = $(this).attr("href").substr(1);
+	// trouver le tag <a name=""> correspondant
+	var saut = $("a[id='"+ ou +"']");
+	// aller jusqu'à cet élément
+	
+	if(ou=='home')
+	{
+		$("#t1").hide();
+		/*document.getElementById("t1").setAttribute('style','visibility:hidden');
+		document.getElementById("t2").setAttribute('style','visibility:hidden');
+		document.getElementById("t3").setAttribute('style','visibility:hidden');*/
+		$('html,body').animate({scrollTop: $(saut).offset().top},1000);
+	}
+	else
+	{ 	
+		//$('#t1').show();
+		document.getElementById("t1").setAttribute('style','visibility:visible'); 
+		/*document.getElementById("t2").setAttribute('style','visibility:visible');
+		document.getElementById("t3").setAttribute('style','visibility:visible');*/
+		$('html,body').animate({scrollTop: $(saut).offset().top},1000);
+	}
+	
+	
+	
+	return false;
+	});
+	
+		
+
+	});
+	</script>
+	
+	
+	<!-- start-smoth-scrolling -->
+</head>
+<body onscroll="myFunction()">
+<!-- banner-slider -->
+
+	<div  id="home" class="banner-slider ">
+		
+	<!-- responsiveslides -->
+							<script src="js/responsiveslides.min.js"></script>
+								<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: true,
+										nav: false,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+								</script>
+		<!-- responsiveslides -->
+		
+		<div id="top" class="callbacks_container ">
+		
+			<ul class="rslides " id="slider3">
+				<!--<li><div class="banner"><div class="container"><div class="banner-info">sadas</div></div></div></li>-->
+				<li>
+					<div class="banner">
+							<div class="container">
+								<div class="banner-info">
+									<h3>MOBILIT&Eacute;</h3>
+									<p>Internet wifi 3G illimit&eacute;, &agrave; la maison ou dans votre poche... </p>
+										<a class="scroll btn btn-default" href="#ccm"><strong>EN SAVOIR PLUS</strong></a>
+																			</div>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+							
+							<div class="container">
+								<div class="banner-info">
+									<h3>CONNECTIVIT&Eacute;</h3>
+									<p>Internet wifi 3G illimit&eacute;, &agrave; la maison ou dans votre poche... </p>
+									<a class="scroll btn btn-default" href="#ccm"><strong>EN SAVOIR PLUS</strong></a>
+								</div>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+							
+							<div class="container">
+								<div class="banner-info">
+									<h3>SIMPLICIT&Eacute;</h3>
+									<p>Internet wifi 3G illimit&eacute;, &agrave; la maison ou dans votre poche... </p>
+									<a class="scroll btn btn-default" href="#ccm"><strong>EN SAVOIR PLUS</strong></a>
+				               </div>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+							
+							<div class="container">
+								<div class="banner-info">
+									<h3><img src="images/02.png"></h3>
+									<p>Internet wifi 3G illimit&eacute;, &agrave; la maison ou dans votre poche... </p>
+									<a class="scroll btn btn-default" href="#ccm"><strong>EN SAVOIR PLUS</strong></a>									                                  </div>
+							</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+<div class="clearfix"></div>
+
+<!-- //banner-slider -->
+<!-- about -->
+
+<div id="ccm" class="testi">
+<div class="header menu-fixed-top" id="t1" style="visibility:hidden;" >
+								<nav class="navbar navbar-default"><div class="header-left"><img src="images/logo.png" width="25%";
+height="25%"></div>
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="scroll" href="#home" data-hover="ACCUEIL">ACCUEIL</a></li>
+														<li><a class="scroll" href="#ccm" data-hover="FONCTIONNEMENT">FONCTIONNEMENT</a></li>
+														<li><a class="scroll" href="#faq" data-hover="FAQ">FAQ</a></li>
+														<!--<li><a class="scroll" href="#reser" data-hover="A PROPOS">A PROPOS</a></li>-->
+														<li><a class="scroll" data-hover="RESERVATION" href="#" data-toggle="modal" data-target="#myModal">RESERVATION</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<script>
+	$(document).ready(function() { 
+
+$("body").click(function(event) {
+        // only do this if navigation is visible, otherwise you see jump in navigation while collapse() is called 
+         if ($(".navbar-collapse").is(":visible") && $(".navbar-toggle").is(":visible") ) {
+            $('.navbar-collapse').collapse('toggle');
+        }
+  });
+
+});
+</script>
+									<div class="clearfix"></div>
+								
+  </div>
+	<div class="container">
+	
+		<div class="about-header">
+			<h3>FONCTIONNEMENT</h3>
+		</div>
+		<div class="col-md-12" style="margin-top:1%">
+            <h5 class="section-title visible-md visible-lg"></h5>
+			 	<h6 class="section-title visible-sm visible-xs"></h6>
+        <!-- Nav tabs --><div class="col-md-3 visible-md visible-lg"></div>
+ 	 </div>
+		<div class="testi-grids">
+			<div class=" col-xs-12  col-sm-5 col-md-5 col-lg-5 testi-grid">
+				<h3><span>Comment &ccedil;a marche?</span> </h3>
+				<dl>
+				  <dt><h4>ETAPE 1 : R&eacute;servation </h4><span class="ser-gridline"> </span></dt>
+				  <dd><p>Cliquez sur le lien &laquo; R&eacute;servation&raquo; ou sur l'un des boutons &laquo;Commander &raquo; et remplissez le formulaire.</p><p>Nous vous contactons pour confirmer votre commande.</p></dd>
+				</dl>
+				<dl>
+				  <dt><h4>ETAPE 2 : Livraison</h4><span class="ser-gridline"> </span></dt>
+				  <dd><p>L'un de nos agent vous livre le kit &agrave; l'adresse indiqu&eacute;e, vous r&eacute;glez les frais et voil&agrave;! Il ne vous reste plus qu'&agrave; allumer votre  hotspot mobile  pour surfer en haut d&eacute;bit 3G illimit&eacute;.</p></dd>
+				</dl><dl>
+				  <dt><h4>ETAPE 3 : Restitution</h4><span class="ser-gridline"> </span></dt>
+				  <dd><p>A la fin de votre p&eacute;riode de location nous vous contactons pour r&eacute;cup&eacute;rer le kit <span style="color:#60039A">dans son &eacute;tat initial </span> et votre caution vous est enti&egrave;rement rembours&eacute;e.</p></dd>
+				</dl>
+				
+			</div>
+			<div class=" col-xs-12  col-sm-7 col-md-7 col-lg-7 testi-grid">
+			<h3><span>Combien &ccedil;a co&ucirc;te?</span> </h3>
+			<div class="pres_v">
+				<div class=" col-xs-12  col-sm-10 col-md-4 col-lg-4 cadre cadre1">
+						<h4> 3 jours</h4><br>
+						<h3> 10.000 Fcfa</h3>
+						<p><i>&nbsp;<!--Parfait pour une journ&eacute;e de de plaisir &agrave; Douala--></i></p>
+						<ul class="list-unstyled">
+							<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp;Internet illimit&eacute;</li>
+							<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp;Haut d&eacute;bit 3G</li>
+							<li><span class="" aria-hidden="true"></span><span style="color:#60039A">&nbsp;</span></li>
+							<li><span class="" aria-hidden="true"></span><span style="color:#60039A">&nbsp;</span></li>
+				  </ul>
+							<div class=""><p><a class="btn btn-default" href="#" data-toggle="modal" data-target="#myModal">Commander</a></p></div>
+							
+				</div>
+				<div class="col-xs-12  col-sm-10 col-md-4 col-lg-4 cadre3" style="" id="meilleur"> 
+				<h4> 10 jours</h4><br>
+						<h3> 25.000 Fcfa</h3>
+						<p><i><!--Idéal pour des vacances au bord du wouri--></i></p>
+						<ul class="list-unstyled">
+							<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp;Internet illimit&eacute;</li>
+							<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp;Haut d&eacute;bit 3G</li>
+							<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span><span style="color:#60039A">&nbsp;Powerbank</span></li><li><span class="" aria-hidden="true"></span><span style="color:#60039A">&nbsp;</span></li>
+						</ul>
+						<div class="clearfix" style="padding-bottom:3px"></div>
+						<div class="xxx"><p><a class="btn btn-default" href="#" data-toggle="modal" data-target="#myModal">Commander</a></p></div>
+			  </div>
+				<div class="col-xs-12  col-sm-10 col-md-4 col-lg-4 cadre cadre2">
+				<h4>14 jours</h4><br>
+						<h3> 45.000 Fcfa</h3>
+						<p><i><!--Le meilleur choix pour 2 semaines de vaccance--></i></p>
+						<ul class="list-unstyled">
+							<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp;Internet illimit&eacute;</li>
+							<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp;Haut d&eacute;bit 3G</li>
+							<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp Powerbank</li>
+							<li><span class="glyphicon glyphicon-check" aria-hidden="true"></span><span style="color:#60039A" >&nbsp 1 jour offert</span></li>
+				  </ul>
+							<div class="xxx"><p><a  class="btn btn-default" href="#" data-toggle="modal" data-target="#myModal">Commander</a></p></div>
+			  </div>
+				
+			</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+		<div class="col-md-12" style="margin-top:1%">
+          <div class="caution"><i> * &nbsp;Une caution de <span style="color:#60039A">40000 Fcfa </span>vous sera demand&eacute;e pour chacune des offres. </i></div>
+ 	 </div>
+	</div>
+	
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><div class="about-header">
+			<h3>COMMANDE</h3>
+		</div></h4>
+      </div>
+      <div class="modal-body">
+        <!--content modal-->
+		
+		<div class="col-md-12 testi-grid">
+			<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">Informations </h4>
+  </div>
+  <div class="panel-body">
+  
+   <form class="form-horizontal" action="Send_cmd.php" method="post">
+  <div class="col-md-12">
+   <blockquote>
+  <p></p>
+  <footer>P&eacute;riode </footer>
+</blockquote>
+</div>
+	<div class="col-md-12">
+<div class="col-md-6"><div class="form-group">
+       <label for="inputEmail3" class="col-md-4 control-label">D&eacute;but</label>
+		<div class="col-md-8">
+			<input class="form-control" type="text" id="txtFromDate" required/>
+		</div>
+	</div> </div>
+	<div class="col-md-6"><div class="form-group">
+	 <label for="inputEmail3" class="col-md-5 control-label">Fin </label>
+	<div class="col-md-7">
+	 <input class="form-control"  type="text" id="txtToDate" required/>
+	 </div>
+	</div></div>
+	
+	
+</div>
+<div class="col-md-12">
+ 
+ 	<div  class="form-group">
+	 <label for="inputEmail3" class="col-md-2 control-label">Qt&eacute; </label>
+	 <div class="col-md-8">
+			<select name="nbre" class="form-control" id="nbre">
+			<option value="1">  1 wifi hotspot</option>
+			<option value="2">  2 wifi hotspot</option>
+			<option value="3">  3 wifi hotspot</option>
+			<option value="4">  4 wifi hotspot</option>
+			<option value="5">  5 wifi hotspot</option>
+			</select>
+	</div>
+ </div> 
+  </div> 
+  <div class="col-md-12">
+   <blockquote>
+  <p></p>
+  <footer>Informations personnelles </footer>
+</blockquote>
+</div>
+<div class="col-md-12">
+			<div  class="form-group">
+				<label for="inputEmail3" class="col-md-2 "> Nom </label>
+				<div class="col-md-10">
+				<input type="text" name="nom" id="nom" class="form-control" required>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div  class="form-group">
+				<label for="inputEmail3" class="col-md-2 "> Prenom </label>
+				<div class="col-md-10">
+				<input type="text" name="prenom" id="prenom" class="form-control" required>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div  class="form-group">
+				<label for="inputEmail3" class="col-md-2 "> Tel</label>
+				<div class="col-md-10">
+				<input type="text" name="tel" id="tel" class="form-control" required>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div  class="form-group">
+				<label for="inputEmail3" class="col-md-2 "> Email</label>
+				<div class="col-md-10">
+				<input type="email"  name="email" id="email" class="form-control" required>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div  class="form-group">
+				<label for="inputEmail3" class="col-md-2 "> Pays de r&eacute;sidence </label>
+				<div class="col-md-10">
+				<input type="text" name="pays" id="pays" class="form-control" required>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="form-group"><input type ="submit" name="Reserver" value="Commander" class="btn btn-default">
+		</div>
+		</div>
+		
+	</form>
+	<script type="text/javascript">
+		 
+$(document).ready(function(){
+
+    $("#txtFromDate").datepicker({
+        numberOfMonths: 1,
+		// $("#txtFromDate").datepicker("clearDates");
+        onSelect: function(selected) {
+          $("#txtToDate").datepicker("option","minDate", selected);
+		// start = $('#txtToDate').datepicker('getDate');
+        }
+    });
+    $("#txtToDate").datepicker({ 
+        numberOfMonths: 1,
+		//$("#txtToDate").datepicker("clearDates");
+        onSelect: function(selected) {
+           $("#txtFromDate").datepicker("option","maxDate", selected);
+		 //  end   = $('#txtFromDate').datepicker('getDate');
+        }
+    });  
+	
+});
+
+function getHU()
+{
+var start1 =  document.getElementById("txtFromDate").value;
+
+var end1 =  document.getElementById("txtToDate").value;
+
+
+   // alert(days);
+
+document.getElementById('resum').innerHTML =start1+ ' - '+ end1;
+
+var total
+var start = $('#txtFromDate').datepicker('getDate');
+    var end   = $('#txtToDate').datepicker('getDate');
+    var days   = (end - start)/1000/60/60/24;
+select = document.getElementById("nbre");
+choice = select.selectedIndex  // Récupération de l'index du <option> choisi
+ 
+valeur_cherchee = select.options[choice].value;
+
+if(days <= 1){
+document.getElementById('nbre').innerHTML ='wifi hotspot  5000 f';
+}
+
+document.getElementById('duree').innerHTML ='Dur&eacute;e du s&eacute;jour: '+days;
+}
+
+</script>
+<script type="text/javascript">
+
+</script>
+	</script>
+  </div>
+</div>
+			
+		  </div>
+			<div class="clearfix"></div>
+		
+		<!--end content-->
+		
+		
+		
+      </div>
+      <div class="modal-footer">
+     <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- FAQ -->
+<div id="faq" class="gallery">
+		<div class="container">
+		<div class="about-header">
+			<h3 >FAQ</h3>
+		</div>
+			<div class="col-xs-12  col-sm-12 col-md-12 col-lg-12" style="margin-top:1%">
+            <h5 class="section-title visible-md visible-lg"></h5>
+			 	<h6 class="section-title visible-sm visible-xs"></h6>
+        <!-- Nav tabs --><div class="col-md-3 visible-md visible-lg"></div>
+ 	 </div>
+			<div class="testi-grids ">
+			<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				
+	<div class="row faq margin-top" data-animation="fadeInUp" data-animation-delay="100">
+	
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left" >
+                        <ul id="tabs-faq"  class="nav">
+                            <li class="active"><a href="#tab-faq1" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> <span class="faq-inner">Wondja c'est quoi ?</span></a></li>
+                            <li><a href="#tab-faq2" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> <span class="faq-inner">Pourquoi utiliser la solution Wondja ?</span></a></li>
+                            <li><a href="#tab-faq3" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> <span class="faq-inner">Quels appareils sont compatibles avec mon hotspot mobile ?</span></a></li>
+                            <li><a href="#tab-faq4" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> <span class="faq-inner">Quelles sont les zones couvertes ?</span></a></li>
+							 <li><a href="#tab-faq5" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> <span class="faq-inner">Quel est le contenu du kit ?</span></a></li>
+							  <li><a href="#tab-faq6" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right"></span> <span class="faq-inner">Comment puis-je payer ?</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-right">
+                        <div class="tab-content">
+                            <div id="tab-faq1" class="tab-pane fade in active">
+                                <div>
+                                    <p> Wondja est une solution innovante, ludique et bon march&eacute; pour profiter &agrave; volont&eacute; d&rsquo;Internet gr&acirc;ce &agrave; un petit hotspot mobile, appel&eacute; <span  style="color:#60039A">MiFi</span>, qui tient dans la poche;</p>
+
+<p>Le MiFi capte le signal 3G et le transforme en un signal WiFi, vous permettant de disposer d&rsquo;un r&eacute;seau priv&eacute; et s&eacute;curis&eacute; autour de vous.</p>
+
+                                </div>
+                            </div>
+                            <div id="tab-faq2" class="tab-pane fade">
+                                <div>
+                                    <p><strong >Facile &agrave; utiliser.</strong> Allumez votre MiFi et connectez-vous &agrave; son r&eacute;seau WiFi s&eacute;curis&eacute;. C&rsquo;est aussi simple que cela !</p>
+
+<p><strong >Pratique. </strong> Surfez en haut d&eacute;bit 3G illimit&eacute; où vous voulez, quand vous voulez, &agrave; des tarifs abordables.</a></p>
+
+<p><strong >Parfait pour un groupe.</strong> Vous pourrez connecter jusqu&rsquo;&agrave; 10 appareils simultan&eacute;ment &agrave; votre hotspot mobile.</p>
+                                    
+                                </div>
+                            </div>
+                            <div id="tab-faq3" class="tab-pane fade">
+                                <div>
+                                    <p> Vous pouvez utiliser votre hotspot mobile avec des ordinateurs portables, smartphones, tablettes,...etc, bref tous les appareils disposant d&rsquo;une carte r&eacute;seau WiFi quelque soit la marque  o&ugrave; le mod&egrave;le. 
+ </p><p>&nbsp;</p>
+                                    
+                                </div>
+                            </div>
+                            <div id="tab-faq4" class="tab-pane fade">
+                                <div>
+									
+                                    <p> Notre service n&rsquo;est d&eacute;ploy&eacute; pour l&rsquo;instant qu&rsquo;&agrave; Douala, et la couverture r&eacute;seau 3G de notre op&eacute;rateur partenaire est effective sur toute la ville. </p>
+									
+                                    
+                                </div>
+                            </div>
+							<div id="tab-faq5" class="tab-pane fade">
+                                <div>
+									
+                                    
+									<p> Le kit de connexion &agrave; Internet que nous vous livrons comprend un hotspot mobile, un mini c&acirc;ble USB et en fonction du forfait choisi un <span style="color:#60039A"> Powerbank </span>.</p>
+									<p><i>* Un powerbank est un accumulateur d&rsquo;&eacute;nergie qui vous permet de recharger votre hotspot mobile en cas de batterie faible. Vous pourrez egalement l&rsquo;utiliser pour recharger n&rsquo;importe lequel de vos appareils s&rsquo;alimentant en USB, o&ugrave; que vous soyez.</i></p>
+                                  
+                                </div>
+                            </div>
+							<div id="tab-faq6" class="tab-pane fade">
+                                <div>
+									
+                                    <p> Nous n&rsquo;acceptons pour l&rsquo;instant que le paiement en esp&egrave;ces. Les r&egrave;glements se font aupr&egrave;s de notre agent au moment de la livraison du kit . </p>
+									
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+			</div>
+			
+	</div>
+	
+				<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+				<script type="text/javascript">
+					$(function() {
+						$('#da-thumbs > li').each( function() { $(this).hoverdir(); } );
+					});
+				</script>
+        </div>
+</div>
+<!-- //FAQ -->
+<!-- get-in -->
+
+<!-- //get-in -->
+<!-- contact-us -->
+<div id="reser" class="contact-us">
+	<div class="container">
+	<div class="get-info text-center">
+			<h3><!--A PROPOS--></h3>
+			
+	  </div>
+		<!--<div class="about-header">
+			<h3 style="color:#fff">A PROPOS</h3>
+		</div>-->
+		
+		<div class="contact-grid">
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<!--<h3 class="text-center" style="color:#60039A">Qui sommes nous? </h3>
+				<span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,similique sunt in culpa qui officia deserunt mollitia</span>--><img src="images/logo.png" class="back">
+				
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<h3 class="text-center" style="color:#60039A">Nous contacter</h3>
+				<address>
+				  <span style="color:#6A6565
+				  "><strong><a class="btn btn-social-icon btn-phone " style="color:#6A6565">
+			<i class="fa fa-home "></i>
+		  </a></strong> Derrière la station-service MRS Ndokoti, Douala<br>
+				 
+				  <strong> <a class="btn btn-social-icon btn-phone" style="color:#6A6565">
+			<i class="fa fa-phone "></i>
+		  </a></strong>00237 676 072 186</span><br>
+				  <strong><a class="btn btn-social-icon btn-phone " style="color:#6A6565">
+			<i class="fa fa-envelope"></i>
+		  </a></strong> <a href="mailto:#" style="color:#6A6565">contact@wondja.com</a></span>
+				</address>
+				
+				 
+				
+				
+					
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<h3 class="text-center" style="color:#60039A">Nous suivre </h3>
+				
+  
+				<ul class="thumbnails list-unstyled list-inline">
+					
+      <li class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-md-6">
+       <a href="#" target="_blank" class="btn btn-social-icon btn-facebook ">
+			<i class="fa fa-facebook fa1"></i>
+		  </a>
+      </li>
+       <li class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-md-6">
+        <a  href="https://twitter.com/wondja_cm" target="_blank" class="btn btn-social-icon btn-twitter ">
+			<i class="fa fa-twitter fa1"></i>
+		  </a>
+      </li>
+	  
+    </ul>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<h3 class="text-center" style="color:#60039A">Nos partenaires </h3>
+				<ul class="thumbnails list-unstyled list-inline">
+					
+      <li class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-md-6">
+        <a href="http://www.mtncameroon.net" target="_blank" class="thumbnail img-responsive">
+          <img src="images/MTN.png" alt="">
+        </a>
+      </li>
+       <li class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-md-6">
+        <a href="http://www.travel-wifi.com/" target="_blank" class="thumbnail img-responsive">
+        <img src="images/travel.png" alt="">
+        </a>
+      </li>
+	   
+    </ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+	</div>
+	
+	<div class="col-md-12" style="margin-top:1%" >
+                        <h5 class="section-title1 visible-md visible-lg"></h5>
+			 <h6 class="section-title1 visible-sm visible-xs"></h6>
+        <!-- Nav tabs -->
+
+
+<div class="col-md-3 visible-md visible-lg">
+    
+</div>
+ 
+                  
+                       
+      </div>
+	  
+</div>
+<!-- //contact-us -->
+<!-- commande -->
+
+<!-- footer -->
+<div class="copy-right">
+	<div class="container">
+		<p> &copy; 2015 Wondja Tous droits reserv&eacute;s | Powered by  <a href="http://www.bantoutelecom.com/" target="_blank"> Bantou Telecom</a></p>
+	</div>
+</div>
+<!-- footer -->
+
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>

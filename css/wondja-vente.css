@@ -1,0 +1,286 @@
+/*
+ * Author: Doriane FOTSING
+ * email: f.dodo@yahoo.fr
+ *
+ * Project Name: Wondja
+ * Version: 1.0
+ * Date: 06-10-2015
+ */
+
+
+/* ==========================================================================
+   Base Styles and Bootstrap Modifications
+   ========================================================================== *//* CSS Document */
+.pres_v{
+padding-top: 50px;
+
+}
+.cadre{
+ -moz-box-shadow: 1px 1px 12px #555;
+-webkit-box-shadow: 1px 1px 12px #555;
+-o-box-shadow: 1px 1px 12px #555;
+box-shadow: 1px 1px 12px #555;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#555, Direction=134, Strength=2);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+ border-radius: 3px;
+ padding:20px 30px;
+}
+.cadre1{
+ z-index:1;
+}
+.cadre2{
+ z-index:2;
+}
+.xxx{
+margin-top:20px}
+.cadre3{
+/*border: 2px solid #000000;*/
+z-index:1000;
+margin-top:-20px;
+padding-bottom:50px;
+padding-top:40px;
+padding-left:30px;
+padding-right:30px;
+-moz-box-shadow: 1px 2px 2px 6px #60039a;
+-webkit-box-shadow: 1px 2px 2px 6px #60039a;
+-o-box-shadow: 1px 2px 2px 6px #60039a;
+box-shadow: 1px 2px 2px 6px #60039a;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#60039a, Direction=153, Strength=2);
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+
+}
+
+.contact_cadre{
+ margin-top:30px;
+}
+.cadre h3{
+font-weight:600;
+color:#60039A;
+font-family: Helvetica,arial, sans-serif;
+font-size:18px;
+line-height:1.2em;
+text-align:center;
+padding-bottom:10px;
+margin-left:20px;
+
+}
+.cadre h4{
+font-weight:600;
+color:#606060;
+font-family: Helvetica,arial, sans-serif;
+font-size:16px;
+line-height:1.2em;
+text-align:center;
+padding-bottom:10px;
+
+
+}
+.cadre3 h4{
+font-weight:600;
+color:#606060;
+font-family: Helvetica,arial, sans-serif;
+font-size:14px;
+line-height:1.2em;
+text-align:center;
+padding-bottom:10px;
+
+
+}
+.cadre3 h3{
+font-weight:700;
+color:#60039A;
+font-family:  Helvetica,arial, sans-serif;
+font-size:18px;
+line-height:1.2em;
+text-align:center;
+padding-bottom:10px;
+margin-left:20px;
+}
+.cadre p{
+font-weight:300;
+color:#6060;
+font-family: Helvetica,arial, sans-serif;
+font-size:16px;
+line-height:1.2em;
+text-align:center;
+padding-top:10px;
+padding-bottom:15px;
+
+}
+.cadre3 p{
+font-weight:300;
+color:#6060;
+font-family:Helvetica,arial, sans-serif;
+font-size:16px;
+line-height:1.2em;
+text-align:center;
+padding-top:10px;
+padding-bottom:15px;
+
+}
+.lien{
+font-weight:300;
+color:#8f8f8f;
+font-family: Helvetica,arial, sans-serif;
+font-size:16px;
+line-height:0.2em;
+text-align:center;
+
+padding:5px 0;
+margin-top:35px;
+background-color: #60039A;
+
+}
+.lien a{color:#fff;}
+.section-title{text-transform:uppercase;border-bottom:solid 1px #ddd;padding-bottom:5px;margin-bottom:10px;margin-top:0;padding-top:0}.section-title a,.post-title a{text-decoration:none}.post-title{border-bottom:solid 1px #ddd;padding-bottom:5px;margin-bottom:10px;margin-top:0;padding-top:0}
+.section-title1{text-transform:uppercase;border-bottom:solid 1px #fff;padding-bottom:5px;margin-bottom:10px;margin-top:0;padding-top:0}.section-title1 a,.post-title1 a{text-decoration:none}.post-title1{border-bottom:solid 1px #fff;padding-bottom:5px;margin-bottom:10px;margin-top:0;padding-top:0}
+/*.section-title{text-transform:uppercase;border-bottom:solid 1px #ddd;padding-bottom:10px;margin-bottom:20px;margin-top:0;padding-top:0}.section-title a,.post-title a{text-decoration:none}
+.post-title{border-bottom:solid 1px #ddd;padding-bottom:10px;margin-bottom:20px;margin-top:0;padding-top:0}.img-caption{position:relative;padding:5px;border:solid 1px #ddd;margin-bottom:20px;color:#fff;width:100%}*/
+
+/*.titre-biseau {
+    border-bottom: 1px solid #e1358d;
+    padding:0;
+    margin:10px 0 10px 0;
+    line-height:0;
+    height:21px;
+}*/
+.titre-biseau span {
+  /* display:inline;*/
+   background: #606060;
+   color: #fff;
+   font-size: 12px;
+   padding: 5px 5px 5px 3px;
+   font-family:Helvetica,arial, sans-serif;
+   font-weight:200;
+   text-transform:uppercase;
+  /* text-shadow: 0 1px 1px #3d3d3d;
+   line-height: 20px;*/
+   position: relative; 
+   /* optionnel */
+   display: inline-block;
+   margin-left: 20px;
+   transform: skewX(-40deg);
+   z-index:3;
+}
+.panel-heading h4{
+padding-bottom:5px;}
+/* menu fixed*/
+@media (min-width: 768px) {
+menu-fixed-top{
+padding-right: 0;
+    padding-left: 0;
+	
+}
+}
+.menu-fixed-top{
+max-height: 200px;
+/*margin-top: 200px;*/
+}
+@media (max-device-width: 480px) and (orientation: landscape) {
+  .menu-fixed-top{
+    max-height: 200px;
+	
+  }
+}
+.menu-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+ /* z-index: 1030;*/
+
+}
+@media (min-width: 768px) {
+  .menu-fixed-top{
+    border-radius: 0;
+	
+  }
+}
+.menu-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+ 
+}
+
+.caution{
+padding:20px 20px;
+text-align:center;
+font-size:18px;
+color:60039A;
+font-weight:600;
+/*background-color:#0099CC;*/
+margin-top: 20px;
+
+
+}
+
+
+
+
+
+
+/* 3.7 - FAQ
+/* ========================================================================== */
+
+.row.faq {}
+.row.faq .tab-content {
+    font-size: 14px;
+    line-height: 24px;
+    border: solid 1px #606060;
+    border-radius: 2px;
+    background-color: #fdfdfd;
+    padding: 50px 50px 50px 50px;
+    position: relative;
+	min-height:310px;
+	text-align:justify;
+}
+@media (max-width: 767px) {
+    .row.faq .tab-content {
+        margin-top: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+}
+@media (min-width: 768px) {
+    .row.faq .nav li.active:before { content: ''; position: absolute; top: 15px; right: -31px; width: 0; height: 0; border-top: 10px solid transparent; border-right: 10px solid #606060; border-bottom: 10px solid transparent; z-index: 1;}
+    .row.faq .nav li.active:after { content: ''; position: absolute; top: 15px; right: -32px; width: 0; height: 0; border-top: 10px solid transparent; border-right: 10px solid #fdfdfd; border-bottom: 10px solid transparent; z-index: 2;}
+}
+@media (max-width: 767px) {
+    .row.faq > .pull-left,
+    .row.faq > .pull-right {float: none !important;}
+}
+
+.row.faq .tab-content .fa {
+    font-size: 18px;
+}
+.row.faq .nav {}
+.row.faq .nav li + li {
+    margin-top: 10px;
+}
+.row.faq .nav li a {
+   /* padding-top: 13px;
+    padding-bottom: 13px;*/
+    padding-left: 20px;
+    border-radius: 10px;
+    border: solid 1px #606060;
+    background-color: #fdfdfd;
+    color: #374146;
+}
+.row.faq .nav li.active a,
+.row.faq .nav li a:hover {
+    background-color: #60039A;
+    border-color: #60039A;
+    color: #ffffff;
+}
+.row.faq .nav li a .glyphicon {
+    width: 20px;
+    text-align: center;
+    margin-right: 15px;
+    margin-top: 3px;
+    float: left;
+}
+.row.faq .nav li a .faq-inner {
+    display: block;
+    overflow: hidden;
+}

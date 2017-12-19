@@ -1,0 +1,76 @@
+	
+	<!-- responsiveslides -->
+							<script src="js/responsiveslides.min.js"></script>
+								<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: true,
+										nav: false,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+								</script>
+		<!-- responsiveslides -->
+		
+		<div id="top" class="callbacks_container ">
+		
+			<ul class="rslides " id="slider3">
+				
+				<li>
+					<div class="banner">
+							<div class="container">
+								<div class="banner-info">
+									<h3>MOBILIT&Eacute;</h3>
+									<p>Internet wifi 3G illimit&eacute;, &agrave; la maison ou dans votre poche... </p>
+										<a class="scroll btn btn-default" href="#ccm"><strong>EN SAVOIR PLUS</strong></a>
+																			</div>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+							
+							<div class="container">
+								<div class="banner-info">
+									<h3>CONNECTIVIT&Eacute;</h3>
+									<p>Internet wifi 3G illimit&eacute;, &agrave; la maison ou dans votre poche... </p>
+									<a class="scroll btn btn-default" href="#ccm"><strong>EN SAVOIR PLUS</strong></a>
+								</div>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+							
+							<div class="container">
+								<div class="banner-info">
+									<h3>SIMPLICIT&Eacute;</h3>
+									<p>Internet wifi 3G illimit&eacute;, &agrave; la maison ou dans votre poche... </p>
+									<a class="scroll btn btn-default" href="#ccm"><strong>EN SAVOIR PLUS</strong></a>
+				               </div>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner">
+							
+							<div class="container">
+								<div class="banner-info">
+									<h3>WONDJA</h3>
+									<p>Internet wifi 3G illimit&eacute;, &agrave; la maison ou dans votre poche... </p>
+									<a class="scroll btn btn-default" href="#ccm"><strong>EN SAVOIR PLUS</strong></a>									                                  </div>
+							</div>
+					</div>
+				</li>
+			</ul>
+		</div>

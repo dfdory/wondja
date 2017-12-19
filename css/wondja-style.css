@@ -1,0 +1,115 @@
+/*
+ * Author: Doriane FOTSING
+ * email: f.dodo@yahoo.fr
+ *
+ * Project Name: Wondja
+ * Version: 1.0
+ * Date: 06-10-2015
+ */
+
+
+/* ==========================================================================
+   Base Styles and Bootstrap Modifications
+   ========================================================================== *//* CSS Document */
+.section{
+height:100%;
+width:100%;
+background-color:#FFFF00;
+}
+   @media (max-width: 480px){
+.contact-grid {
+	  float: left;
+	  width: 100%;
+	  padding:0;
+	}
+	
+	}
+ @media (max-width: 800px){
+.contact-grid {
+	  float: left;
+	  width: 100%;
+	  padding:0;
+	}
+	
+	}
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px;
+  }
+   .navbar-nav > li > a {
+   /* padding-top: -100px;
+    padding-bottom: -5px;*/
+	
+  }
+}
+.navbar {
+  position: relative;
+  min-height: 20px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+}
+.navbar-default {
+ background: rgba(255, 255, 255, 1);
+  border-color: #ffffff;
+   /*animation: moveFromBottom 500ms ease;*/
+}
+.navbar-default .navbar-brand {
+  color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: #777;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #60039A;
+  background-color: transparent;
+  /*transform: scale(1.1);*/
+ /* animation: moveFromBottom 300ms ease;*/
+}
+
+.navbar-collapse {
+margin-top:10px;
+}
+
+@media (max-width: 768px){
+.navbar-collapse {
+margin-top:5px;
+}
+}
+
+@media (max-width: 1024px){
+.navbar-collapse {
+margin-top:5px;
+}
+}
+@media (min-width: 1025px ){
+.banner-slider {
+		min-height: 720px;
+	 /* min-height: 350px;*/
+	
+	}
+}
+.fa1{
+   z-index: 9999;
+  top: 0px;
+  left:100px;
+  font-size: 100px;
+  /*color: #fff;*/
+ }
+ .wondja{
+font-weight:700;
+color:#60039A;
+font-family:monotype corsiva;
+font-size:80px;
+line-height:64.8em;
+font-style: italic;
+}
